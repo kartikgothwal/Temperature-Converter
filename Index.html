@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor 🌡️</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body>
+    <video autoplay muted loop src="./static/imgs/forest-40034 (1).mp4" id="VideoBg"></video>
+    <section id="convertor-section">
+        <div class="container">
+            <h1>Temperature Converter 🌡️</h1>
+            <div class="convertor">
+                <div class="get-data-container">
+
+                    <div class="input-container">
+                        <div class="get-degree">
+                            <label for="get-degree-data">Degrees</label>
+                            <input type="number" name="get-degree-data" id="get-degree-data-hero" required>
+                        </div>
+                        <div class="get-type">
+                            <label for="get-type-data">From</label>
+                            <select name="get-type-data" id="get-type-data" required>
+                                <option value="disabled" disabled>Select the type</option>
+                                <option value="Celsius">Celsius</option>
+                                <option value="Kelvin">Kelvin</option>
+                                <option value="Fahrenheit">Fahrenheit</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="second-column">
+                        <div class="get-type">
+                            <label for="get-type-data-hero-second">To</label>
+                            <select name="get-type-data-hero-second" id="get-type-data-second" required>
+                                <option value="disabled" disabled>Select the type</option>
+                                <option value="Celsius">Celsius</option>
+                                <option value="Kelvin">Kelvin</option>
+                                <option value="Fahrenheit">Fahrenheit</option>
+                            </select>
+                        </div>
+                        <div class="result-container">
+                            <label for="show-result">Result</label>
+                            <span id="show-result">Result </span>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button id="convert-btn">Convert</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./app.js"></script>
+
+</html>

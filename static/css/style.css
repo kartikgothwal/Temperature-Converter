@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --black-color: black;
+    --white-color: white;
+    --blue-color: blue;
+    --text-color: #767676;
+}
+
+#VideoBg {}
+
+#convertor-section {
+    border: 3px solid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 35rem;
+    width: 40rem;
+    /* border: 2px solid white; */
+    box-shadow: 0 1px 15px 0 rgb(221 196 191 / 35%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.container h1 {
+    position: absolute;
+    top: 3rem;
+    text-align: center;
+    color: paleturquoise;
+    font-size: 2rem;
+}
+
+.convertor {
+    height: 25rem;
+    width: 35rem;
+    /* border: 2px solid white; */
+}
+
+.get-data-container {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-degree,
+.get-type {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    color: #2f0c0c;
+    font-size: 1.5rem;
+    color: paleturquoise;
+}
+
+input,
+select {
+    border: none;
+    font-size: 1.2rem;
+    height: 40px;
+    width: 10rem;
+    color: black;
+    border-bottom: 2px solid #fafafa;
+    background: rgb(104 99 99 / 0%);
+}
+.second-column {
+    display: flex;
+    justify-content: space-between;
+
+}
+ 
+#show-result{
+    border: none;
+    font-size: 1.2rem;
+    height: 40px;
+    width: 10rem;
+    color: black;
+    border-bottom: 2px solid #fafafa;
+    background: rgb(104 99 99 / 0%);
+}   
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1rem;
+    height: 7rem;
+}
+
+#convert-btn {
+    width: 20rem;
+    cursor: pointer;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border: 2px solid white;
+    transition: all .2s linear;
+    font-family: Rubik, sans-serif;
+}
+
+#convert-btn:hover {
+    letter-spacing: 1px;
+
+}
